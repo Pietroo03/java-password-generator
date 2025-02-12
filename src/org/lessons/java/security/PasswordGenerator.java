@@ -18,11 +18,18 @@ public class PasswordGenerator {
         short yearOfBirth;
 
         Scanner in = new Scanner(System.in);
+
+        System.out.print("Inserisci il tuo Nome:");
         name = in.nextLine();
+        System.out.print("Inserisci il tuo Cognome:");
         surname = in.nextLine();
+        System.out.print("Inserisci il tuo Colore preferito:");
         favouriteColor = in.nextLine();
+        System.out.print("Inserisci il tuo Giorno di nascita:");
         dayOfBirth = in.nextByte();
+        System.out.print("Inserisci il tuo Mese di nascita:");
         monthOfBirth = in.nextByte();
+        System.out.print("Inserisci il tuo Anno di nascita:");
         yearOfBirth = in.nextShort();
 
         short sumBirth = (short) (dayOfBirth + monthOfBirth + yearOfBirth);
